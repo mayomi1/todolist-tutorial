@@ -31,7 +31,9 @@ if(mysqli_num_rows($result) >= 1){
         ?>
 
     <ul>
-        <li><a href="detail.php?id=<?php echo $id?>"><?php echo $title ?></a></li> <?php echo "[[$date";?>
+        <li><a href="detail.php?id=<?php echo $id?>"><?php echo $title ?></a></li> <?php echo "[[$date]]";?>
+        <button type="button"><a href="edit.php?id=<?php echo $id?>">Edit</a></button>
+        <button type="button"><a href="delete.php?id=<?php echo $id?>">Delete</a></button>
     </ul>
 <?php
     }
